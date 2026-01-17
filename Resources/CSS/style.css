@@ -1,0 +1,281 @@
+body {
+    background: #white;
+    color: #black;
+    padding: 25px;
+    font-family: sans-serif;
+    align: center;
+    background-color: beige;
+  }
+  
+
+th, td {
+          border: 3px solid lightblue;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 26px;
+          text-transform: uppercase;
+          padding: 10px;
+          background-color: antiquewhite;
+      }
+ 
+
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+   
+    padding: 10px;
+   
+    overflow: auto;
+  }
+  head {
+    align-content: center;
+  }
+  
+  input, textarea {
+    font-size: 36px;
+    text-color: blue;
+    padding: 10px;
+  }
+  
+  .header {
+    display: flex;
+    font-family: Arial;
+    font-size: 36px;
+    
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+   
+    gap: 20px;
+    color: burlywood;
+  }
+  .nav a {
+    color: #800020;          /* burgundy / wine */
+    font-weight: bold;
+
+  }
+
+  .top-content {
+    text-align: center;
+    border: 5px solid #800020;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px 30px; /* ⬅ top/bottom | left/right */
+  }
+
+
+
+.citylinks > div {
+  flex: 1;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .citylinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .citylinks > div {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+
+.content-btn {
+  display: inline-block;
+  background-color: #800020;   /* burgundy / wine */
+  color: #ffffff;
+
+  padding: 10px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(128, 0, 32, 0.35);
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Hover (mouse over) */
+.content-btn:hover {
+  background-color: #5a0015;   /* darker wine */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(128, 0, 32, 0.45);
+}
+
+/* Click (mouse down) */
+.content-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(128, 0, 32, 0.5);
+}
+
+
+#houston, #dallas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  nav a:link { 
+    text-decoration: none; 
+  } 
+ nav  a:visited { 
+    text-decoration: none; 
+  } 
+  nav a:hover { 
+    text-decoration: none; 
+    opacity: .75;
+  } 
+  nav a:active { 
+    text-decoration: none; 
+  }
+ 
+  
+  
+  thead {
+    font-weight: bold;
+    position:sticky;
+  }
+
+/* Main Content Section */
+  .maincontent {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .citylinks {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  
+}
+
+.city-links-content {
+  border: 2px solid #800020;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+  
+.food-bank-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+
+ 
+  }
+
+
+
+.food-bank-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  padding: 20px;
+  border: 2px solid #800020;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.food-bank-image {
+    width: 200px;
+  height: auto;
+  border-radius: 10px;
+  }
+
+.food-bank-details {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+  .food-bank-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-bank-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.food-bank-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.food-bank-details-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.food-bank-details-list i {
+  color: #800020;
+  min-width: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #800020;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5f0018;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+
+  hr {
+    margin-top: 20px;
+  }
+
+  form{
+    padding: 20px;
+    color:blue;
+  }
+
+  form p {
+    align-items: left;
+    color: blue;
+  }
+
+  form input {
+    align-items: right;
+    color: blue;
+  }
