@@ -8,72 +8,252 @@
 <body>
   <!-- Main Navigatrion Menu -->
 <header class="header">
-  <nav class="nav">
-  <a href="../index.html"> Home </a> &nbsp;
-  <a href="../Pages/dallas.html"> Dallas </a> &nbsp;
-  <a href="../Pages/houston.html"> Houston </a> &nbsp;
-  <a href="../Pages/austin.html"> Austin</a>
-  </nav>
+  <div class="nav-container">
+    <div class="logo">
+      
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../Pages/dallas.html">Dallas</a>
+      <a href="../Pages/houston.html">Houston</a>
+      <a href="../Pages/austin.html">Austin</a>
+    </nav>
+  </div>
 </header>
+
 
 <div align="center" > <!-- this div is for the title and first paragraph of the page-->
 <h1> Austin Texas</h1>
   <p>List of food banks in Austin Texas</p>
 </div>
-<!-- This table displays the five main food banks in the austin area. -->
-<table align="center">
- <thead> 
-    <tr>
-    <td>Facility Name</td>
-    <td>Address</td>
-    <td>Phone</td>
-    <td>Services Offered</td>
-    </tr>
- </thead>
 
-<tbody>
-  <tr>
-    <td>Houston Food Bank
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNMG1XaMvnOm8h9Py41sWzfSWD8vai-aDhOCkA8=s680-w680-h510" height="150" width="200">
-    </td>
-    <td>535 Portwall St, Houston, TX 77029</td>
-    <td>(713) 223-3700</td>
-    <td>Food six days a week.</td>
-  </tr>
-  <tr>
-    <td>Houston Food Bank
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNMG1XaMvnOm8h9Py41sWzfSWD8vai-aDhOCkA8=s680-w680-h510" height="150" width="200">
-    </td>
-    <td>535 Portwall St, Houston, TX 77029</td>
-    <td>(713) 223-3700</td>
-    <td>Food six days a week.</td>
-  </tr>
-  <tr>
-    <td>Houston Food Bank
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNMG1XaMvnOm8h9Py41sWzfSWD8vai-aDhOCkA8=s680-w680-h510" height="150" width="200">
-    </td>
-    <td>535 Portwall St, Houston, TX 77029</td>
-    <td>(713) 223-3700</td>
-    <td>Food six days a week.</td>
-  </tr>
-  <tr>
-    <td>Houston Food Bank
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNMG1XaMvnOm8h9Py41sWzfSWD8vai-aDhOCkA8=s680-w680-h510" height="150" width="200">
-    </td>
-    <td>535 Portwall St, Houston, TX 77029</td>
-    <td>(713) 223-3700</td>
-    <td>Food six days a week.</td>
-  </tr>
-  <tr>
-    <td>Houston Food Bank
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNMG1XaMvnOm8h9Py41sWzfSWD8vai-aDhOCkA8=s680-w680-h510" height="150" width="200">
-    </td>
-    <td>535 Portwall St, Houston, TX 77029</td>
-    <td>(713) 223-3700</td>
-    <td>Food six days a week.</td>
-  </tr>
-</tbody>
-</table>
-  <script src="script.js"></script>
+  <ul class="food-bank-list">
+    
+    <li class="food-bank-item">
+      <div class="food-bank-image">
+        <img src="../Resources/food bank images/Houston food bank.jpg" height="150" width="200" alt="North Texas Food Bank Logo">
+      </div>
+      <div class="food-bank-details">
+            <h2>North Texas Food Bank</h2>
+        <ul class="food-bank-details-list">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> 4500 S Cockrell Hill Rd, Dallas, TX 75236</p>
+                </li>
+                  <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone:</strong>
+              <a href="tel:12143301396">(214) 330-1396</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <strong>Website:</strong>
+              <a href="https://www.northtexasfoodbank.org" target="_blank">
+                northtexasfoodbank.org
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-box-open"></i>
+              <strong>Services:</strong>
+              Food distribution, nutrition education, community programs.
+            </li>
+
+        </ul>
+
+        <a
+          class="btn-primary"
+          href="https://www.google.com/maps/search/?api=1&query=4500+S+Cockrell+Hill+Rd+Dallas+TX+75236"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+      </div>
+    </li>
+
+
+    <li class="food-bank-item">
+      <div class="food-bank-image">
+        <img src="../Resources/food bank images/Houston food bank.jpg" height="150" width="200" alt="North Texas Food Bank Logo">
+      </div>
+      <div class="food-bank-details">
+            <h2>North Texas Food Bank</h2>
+        <ul class="food-bank-details-list">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> 4500 S Cockrell Hill Rd, Dallas, TX 75236</p>
+                </li>
+                  <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone:</strong>
+              <a href="tel:12143301396">(214) 330-1396</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <strong>Website:</strong>
+              <a href="https://www.northtexasfoodbank.org" target="_blank">
+                northtexasfoodbank.org
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-box-open"></i>
+              <strong>Services:</strong>
+              Food distribution, nutrition education, community programs.
+            </li>
+
+        </ul>
+
+        <a
+          class="btn-primary"
+          href="https://www.google.com/maps/search/?api=1&query=4500+S+Cockrell+Hill+Rd+Dallas+TX+75236"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+      </div>
+    </li>
+
+    <li class="food-bank-item">
+      <div class="food-bank-image">
+        <img src="../Resources/food bank images/Houston food bank.jpg" height="150" width="200" alt="North Texas Food Bank Logo">
+      </div>
+      <div class="food-bank-details">
+            <h2>North Texas Food Bank</h2>
+        <ul class="food-bank-details-list">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> 4500 S Cockrell Hill Rd, Dallas, TX 75236</p>
+                </li>
+                  <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone:</strong>
+              <a href="tel:12143301396">(214) 330-1396</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <strong>Website:</strong>
+              <a href="https://www.northtexasfoodbank.org" target="_blank">
+                northtexasfoodbank.org
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-box-open"></i>
+              <strong>Services:</strong>
+              Food distribution, nutrition education, community programs.
+            </li>
+
+        </ul>
+
+        <a
+          class="btn-primary"
+          href="https://www.google.com/maps/search/?api=1&query=4500+S+Cockrell+Hill+Rd+Dallas+TX+75236"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+      </div>
+    </li>
+
+    <li class="food-bank-item">
+      <div class="food-bank-image">
+        <img src="../Resources/food bank images/Houston food bank.jpg" height="150" width="200" alt="North Texas Food Bank Logo">
+      </div>
+      <div class="food-bank-details">
+            <h2>North Texas Food Bank</h2>
+        <ul class="food-bank-details-list">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> 4500 S Cockrell Hill Rd, Dallas, TX 75236</p>
+                </li>
+                  <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone:</strong>
+              <a href="tel:12143301396">(214) 330-1396</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <strong>Website:</strong>
+              <a href="https://www.northtexasfoodbank.org" target="_blank">
+                northtexasfoodbank.org
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-box-open"></i>
+              <strong>Services:</strong>
+              Food distribution, nutrition education, community programs.
+            </li>
+
+        </ul>
+
+        <a
+          class="btn-primary"
+          href="https://www.google.com/maps/search/?api=1&query=4500+S+Cockrell+Hill+Rd+Dallas+TX+75236"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+      </div>
+    </li>
+
+    <li class="food-bank-item">
+      <div class="food-bank-image">
+        <img src="../Resources/food bank images/Houston food bank.jpg" height="150" width="200" alt="North Texas Food Bank Logo">
+      </div>
+      <div class="food-bank-details">
+            <h2>North Texas Food Bank</h2>
+        <ul class="food-bank-details-list">
+                <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <strong>Address:</strong> 4500 S Cockrell Hill Rd, Dallas, TX 75236</p>
+                </li>
+                  <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone:</strong>
+              <a href="tel:12143301396">(214) 330-1396</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <strong>Website:</strong>
+              <a href="https://www.northtexasfoodbank.org" target="_blank">
+                northtexasfoodbank.org
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-box-open"></i>
+              <strong>Services:</strong>
+              Food distribution, nutrition education, community programs.
+            </li>
+
+        </ul>
+
+        <a
+          class="btn-primary"
+          href="https://www.google.com/maps/search/?api=1&query=4500+S+Cockrell+Hill+Rd+Dallas+TX+75236"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+
+
+
+
+
+ 
+  <script src="../script.js"></script>
+
 </body>
 </html>

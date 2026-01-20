@@ -3,54 +3,90 @@
 <head>
   <title>Add New Listing</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <link href="style.css" rel="stylesheet">
+  <link href="../Resources/CSS/style.css" rel="stylesheet">
 </head>
 <body>
   <!-- Main Navigatrion Menu -->
-<nav align="center">
-  <a href="./index.html"> Home </a> &nbsp;
-  <a href="./dallas.html"> Dallas </a> &nbsp;
-  <a href="./houston.html"> Houston </a> &nbsp;
-  <a href="./addnewlisting.html"> Add New Listing</a>
-</nav>
-<hr /> <!-- This is the tag for Horizontal Rule. Adds a line to the page -->
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">
+      
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../Pages/dallas.html">Dallas</a>
+      <a href="../Pages/houston.html">Houston</a>
+      <a href="../Pages/austin.html">Austin</a>
+    </nav>
+  </div>
+</header>
+
+
+
  
- <div>
-  <h1>Add New Listing</h1>
-<p>If you would like to have a service added that is not on our website please feel free to add it by filling out the form bellow. </p>
-
+<div class="maincontent">
 <!-- this form is to add new listings of facilities amd services offered. -->
-<form> 
-  <p>
-  <label>
-    Name of Facility
-  <input type="text"/>
-  </label>
-  </p>
+<section class="add-listing-section">
+  <h1>Add a New Food Bank Listing</h1>
+  <p>Please fill out the form below to submit a new food bank for review.</p>
 
-  <p>
-  <lael>
-    Address
-  <input type="text"/>
-  </label>
-  </p>
-  
-  <p> 
-  <label></label>
-    Phone
-  <input type="tel"/>
-  </label>
-  </p>
+  <form
+    action="https://formspree.io/f/xzddvpqn"
+    method="POST"
+    class="add-listing-form"
+  >
+    <label>
+      Organization Name
+      <input type="text" name="organization" required>
+    </label>
 
-  <p>
-  <label>
-    Services Offered
-  <textarea name="Services" cols="50" rows="5"></textarea>
-  </label>
-  </p>
-  <input type="submit" name="Submit New Listing" value="Submit New Listing"/>
-</form>
+    <label>
+      City
+      <select name="city" required>
+        <option value="">Select City</option>
+        <option>Dallas</option>
+        <option>Houston</option>
+        <option>Austin</option>
+      </select>
+    </label>
+
+    <label>
+      Address
+      <input type="text" name="address" required>
+    </label>
+
+    <label>
+      Phone Number
+      <input type="tel" name="phone">
+    </label>
+
+    <label>
+      Website
+      <input type="url" name="website">
+    </label>
+
+    <label>
+      Services Offered
+      <textarea name="services" rows="4"></textarea>
+    </label>
+
+    <label>
+      Your Email (for follow-up)
+      <input type="email" name="email" required>
+    </label>
+
+    <button type="submit" class="btn-primary">
+      Submit Listing
+    </button>
+  </form>
+</section>
+
 </div>
-  <script src="script.js"></script>
+   <script src="../script.js"></script>
 </body>
 </html>

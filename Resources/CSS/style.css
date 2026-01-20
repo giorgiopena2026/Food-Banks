@@ -41,7 +41,7 @@ th, td {
     font-family: Arial;
     font-size: 36px;
     
-    height: 80px;
+ 
     align-items: center;
     justify-content: center;
   }
@@ -265,17 +265,174 @@ html {
     margin-top: 20px;
   }
 
-  form{
+ 
+
+  /* =========================
+   NAVIGATION (DESKTOP)
+========================= */
+
+.header {
+  background-color: beige;
+ 
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #800020;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #800020;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #800020;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 2px solid #800020;
+    padding-top: 10px;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    background-color: beige;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav a {
+    border-bottom: 1px solid #800020;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}
+
+}
+
+/* =========================
+   ADD NEW LISTING FORM
+========================= */
+
+.add-listing-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #800020;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.add-listing-section h1 {
+  text-align: center;
+  color: #800020;
+}
+
+.add-listing-section p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.add-listing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-listing-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #800020;
+}
+
+.add-listing-form input,
+.add-listing-form select,
+.add-listing-form textarea {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #800020;
+}
+
+.add-listing-form textarea {
+  resize: vertical;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .add-listing-section {
+    margin: 20px;
     padding: 20px;
-    color:blue;
   }
+}
 
-  form p {
-    align-items: left;
-    color: blue;
-  }
+/* =========================
+   ADD LISTING CTA BUTTON LOCATED ON HOME PAGE
+========================= */
 
-  form input {
-    align-items: right;
-    color: blue;
-  }
+.add-listing-cta {
+  text-align: center;
+  margin: 50px 0;
+}
